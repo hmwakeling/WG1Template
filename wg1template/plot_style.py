@@ -108,7 +108,7 @@ def set_matplotlibrc_params():
     :return: None
     """
     xtick = {
-        'top': True,
+        'top': False,
         'minor.visible': True,
         'direction': 'in',
         'labelsize': 10

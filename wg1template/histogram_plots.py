@@ -13,6 +13,7 @@ from scipy.stats import binned_statistic
 from uncertainties import unumpy as unp
 
 import wg1template.plot_style as plot_style
+from wg1template.plot_utilities import get_auto_ylims
 
 plot_style.set_matplotlibrc_params()
 
@@ -592,7 +593,7 @@ class DataMCHistogramPlot(HistogramPlot):
             ax2.errorbar(bin_mids, unp.nominal_values(ratio), yerr=unp.std_devs(ratio),
                          ls="", marker=".", color=plot_style.KITColors.kit_black)
         except ZeroDivisionError:
-            ax2.axhline(y=0, color=plot_style.KITColors.dark_grey, alpha=0.8)
+#            ax2.axhline(y=0, color=plot_style.KITColors.dark_grey, alpha=0.8)
 
         plt.subplots_adjust(hspace=0.08)
 
