@@ -593,7 +593,7 @@ class DataMCHistogramPlot(HistogramPlot):
             ax2.errorbar(bin_mids, unp.nominal_values(ratio), yerr=unp.std_devs(ratio),
                          ls="", marker=".", color=plot_style.KITColors.kit_black)
         except ZeroDivisionError:
-#            ax2.axhline(y=0, color=plot_style.KITColors.dark_grey, alpha=0.8)
+            ax2.axhline(y=0, color=plot_style.KITColors.dark_grey, alpha=0.8)
 
         plt.subplots_adjust(hspace=0.08)
 
