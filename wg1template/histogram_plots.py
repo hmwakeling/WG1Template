@@ -13,7 +13,6 @@ from scipy.stats import binned_statistic
 from uncertainties import unumpy as unp
 
 import wg1template.plot_style as plot_style
-from wg1template.plot_utilities import get_auto_ylims
 
 plot_style.set_matplotlibrc_params()
 
